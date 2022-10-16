@@ -1,0 +1,14 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: discord-bot-alert
+  namespace: default
+spec:
+  eventSeverity: info
+  eventSources: 
+  - kind: GitRepository
+    nameL '*'
+  - kind: Kustomization
+    name: '*'
+  providerRef:
+    name: discord

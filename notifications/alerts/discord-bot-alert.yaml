@@ -5,10 +5,10 @@ metadata:
   namespace: default
 spec:
   eventSeverity: info
-  eventSources: 
-  - kind: GitRepository
-    name: '*'
-  - kind: Kustomization
-    name: '*'
+  eventSources:
+    - kind: GitRepository
+      name: '*'
+    - kind: Kustomization
+      name: '*'
   providerRef:
     name: discord

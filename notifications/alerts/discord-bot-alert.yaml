@@ -7,7 +7,7 @@ spec:
   eventSeverity: info
   eventSources: 
   - kind: GitRepository
-    nameL '*'
+    name: '*'
   - kind: Kustomization
     name: '*'
   providerRef:

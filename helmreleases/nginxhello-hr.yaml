@@ -15,4 +15,7 @@ spec:
   interval: 1m0s
   values:
     color: red
-
+    spec:
+  upgrade:
+    remediation:
+      retries: 2
